@@ -1,0 +1,7 @@
+{
+  "name": "repo-shoes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
