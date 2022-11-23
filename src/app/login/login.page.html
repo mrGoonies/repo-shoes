@@ -21,8 +21,8 @@
       <ion-input aria-placeholder="Enter Password" type="password"></ion-input>
     </ion-item>
     <br />
-    <ion-button expand="block">sign In</ion-button>
-    <ion-button fill="clear" expand="block">sign Up</ion-button>
+    <ion-button expand="block" (click)="[navigateToHome()]">sign In</ion-button>
+    <ion-button fill="clear" expand="block" (click)="[navigateToSignUp()]">sign Up</ion-button>
   </ion-card-content>
   </ion-card>
 </ion-content>
