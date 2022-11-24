@@ -1,9 +1,49 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>signUp</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sign Up</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background">
+
+  <ion-card class="card">
+
+    <img src="{{ imageAnimated }}" width="400" />
+  
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Username</ion-label>
+          <ion-input placeholder="Enter username"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input placeholder="Your Password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-select placeholder="Select your Store">
+            <ion-select-option value="none">--- None ---</ion-select-option>
+            <ion-select-option value="buenaventura">003 buenaventura</ion-select-option>
+          </ion-select>
+        </ion-item>
+         <ion-item>
+          <ion-label>Are you in charge?</ion-label>
+          <ion-toggle></ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-label>Admin Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+    <ion-button expand="block" (click)="[navigateToLogin(), showLoading()]">Create Account</ion-button>
+
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
